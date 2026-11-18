@@ -1,0 +1,15 @@
+[project]
+name = "job-tracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic>=1.20.1",
+    "asyncpg>=0.32.0",
+    "fastapi[standard]>=0.162.6",
+    "sqlalchemy[asyncio]>=2.1.8",
+]
+
+[tool.fastapi]
+entrypoint = 'app.main:app'
